@@ -11,11 +11,14 @@ The mfsetuid only writes the specified uid to a card.
 # Usage of each tool
 
 gcc mfclassic.c -o mfclassic -lnfc
+
 ./mfclassic W a u <file_name>.mfd
 
 gcc mfclone.c -o mfclone -lnfc
+
 ./mfclone <file_name>.mfd
 
 gcc mfsetuid.c -o mfsetuid -lnfc
+
 ./mfsetuid '88456789'
 
